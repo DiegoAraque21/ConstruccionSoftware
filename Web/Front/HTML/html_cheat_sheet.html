@@ -1,39 +1,306 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>HTML Cheat Sheet!!!</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CHEAT SHEET!!!</title>
+    <style>
+      img.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
+      }
+      img.small {
+        width: 20%;
+      }
+    </style>
+  </head>
 
-    <body style="background-color: rgb(211, 18, 18);">
+  <body>
+    <center><h1>HTML CHEAT SHEET</h1></center>
+    <center>Diego Araque Fernandez - a01026037@tec.mx</center>
+    <br />
+    <img src="../extra/html.png" alt="html logo" class="center" />
+    <br />
+    <hr />
+    <h3>a - HYPERLINKS</h3>
+    <p>Este tag es utilizado para generar un enlace externo o interno.</p>
+    Ejemplo:
+    <a href="https://google.com" target="_blank">
+      Asi funcionan los hyperlinks
+    </a>
+    <hr />
 
-        <h1>Construccion de Software</h1>
-        <h2>Subtitulo</h2>
-        <h3>Subtitulo</h3>
-        <p> Hello World!</p>
+    <h3>p- PARAGRAPH</h3>
+    <p>Este tag es utlizado para poner texto en estilo de parrafo.</p>
+    <p>
+      Ejemplo: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Molestiae, dicta?
+    </p>
+    <hr />
 
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laboriosam quaerat eveniet sed quibusdam reiciendis corrupti aspernatur illum error, necessitatibus dignissimos atque repellendus earum reprehenderit eius saepe voluptates debitis distinctio!</p>
-            <h2>Listas sin orden</h2>
-            <ul>
-                <li>asdfias</li>
-                <li>asdfias</li>
-                <li>asdfias</li>
-                <li>asdfias</li>
-            </ul>
-            <h2>Listas con orden</h2>
-            <ol>
-                <li>asdfias</li>
-                <li>asdfias</li>
-                <li>asdfias</li>
-                <li>asdfias</li>
-            </ol>
+    <h3>h 1 TO 6- HEADINGS</h3>
+    <p>Con este tag se ponen subitulos con distintas clasificaciones.</p>
+    <p>Ejemplos:</p>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <hr />
 
-            <h3>Imagenes</h3>
-            <img src="../extra/tarantino.png">
-            
-            <h2>Links</h2>
-            <a href="http://www.google.com" target="_blank">Ir a google</a>
-        </div>
+    <h3>div- DIVISIONS</h3>
+    <p>
+      El tag div nos ayuda a seleccionar y agrupar partes de nuestra pagina web,
+      de esta manera la podemos haxcer diviciones.
+    </p>
+    <div>
+      Ejemplo:
+      <p>Mi canal de Youtube</p>
+    </div>
+    <hr />
 
-    </body>
+    <h3>span- SPANS</h3>
+    <p>
+      Son muy parecido a los divs y su funcion basica tambien es de darle estilo
+      a tu pagina web.
+    </p>
+    <p>Ejemplo: <span class="tooltip">HTML CHEAT SHEET</span></p>
+    <hr />
+
+    <h3>strong- BOLD TEXT</h3>
+    <p>
+      Se usa para pone en negritas alguna palabra o conjunto de palabras, ademas
+      le da mas importancia a esta palabra o parte del texto.
+    </p>
+    Ejemplo:
+    <strong>Ejemplo</strong>
+    <hr />
+
+    <h3>i- Italic</h3>
+    <p>Este tag es utilizado para poner letras en italica.</p>
+    <p>Ejemplo: <i>Hola me llamo Diego!</i></p>
+    <hr />
+
+    <h3>u- UNDERLINE TEXT</h3>
+    <p>Este tag sirve para subrayar texto.</p>
+    <p>
+      Ejemplo:
+      <u>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic magni sit
+        illum sequi repellendus optio!
+      </u>
+    </p>
+    <hr />
+
+    <h3>b- BOLDT TEXT</h3>
+    <p>Este tag sirve para poner en negritas el texto.</p>
+    <p>Ejemplo: <b>En 2 semanas sale el neuvo juego de nintendo</b></p>
+    <hr />
+    <h3>strike- TACHAR</h3>
+    <p>
+      Funciona para poner una linea encima del texto para hacer una funcion como
+      la de un tache. En html5 se usa el tag &lt;del&gt;.
+    </p>
+    <p>Ejemplo: <del>Hola como estas?</del></p>
+    <hr />
+
+    <h3>small- SMALL TEXT</h3>
+    <p>
+      Este tag sirve para hacer que el texto que se escribe se vea mas pequeño.
+    </p>
+    <p>Ejemplo: <small>Hola estudio en el Tecnologico de Monterrey</small></p>
+    <hr />
+
+    <h3>em- EMPHASIZE</h3>
+    <p>
+      Es utilizado para emfatizar un texto o algo de tu eleccion en la pagina
+      web.
+    </p>
+    <p>Ejemplo: La tarea es para <em>Mañana</em></p>
+    <hr />
+
+    <h3>header- HEADER</h3>
+    <p>Este tag sirve para dar una especie de titulo a un &lt;article&gt;.</p>
+    <p>Ejemplo:</p>
+    <article>
+      <header>
+        <h1>Hubo un robo ayer en el TEC CSF</h1>
+        <p>Hecho por Diego Araque</p>
+      </header>
+    </article>
+    <hr />
+
+    <h3>section- SECTION</h3>
+    <p>Darle una o varias seccion al documento.</p>
+    <p>Ejemplo:</p>
+    <section>
+      <h3>Dias claves de la Independencia</h3>
+      <p>
+        Hay muchos dias claves que ayudaron que nuestro pais se liberara de los
+        españoles.
+      </p>
+    </section>
+    <hr />
+
+    <h3>article- ARTICLE</h3>
+    <p>Un articulo con su propio contenido.</p>
+    <p>Ejemplo:</p>
+    <article>
+      <h4>Aprender HTML</h4>
+      <p>
+        Los tags son parte clave para el entendimiento de HTML, es muy simple de
+        aprender.
+      </p>
+    </article>
+    <hr />
+
+    <h3>aside- ASIDE</h3>
+    <p>
+      Ayuda a poner informacion que n0o necesariamente tiene que estar en el
+      parrafo en el que se escribe.
+    </p>
+    <p>Ejemplo:</p>
+    <p>
+      Youtube es una plataforma en la que se pueden ver videos de muchas
+      categorias.
+    </p>
+    <aside>
+      <h4>Youtube</h4>
+      <p>Una de las categorias es deportes.</p>
+    </aside>
+    <hr />
+
+    <h3>footer- FOOTER</h3>
+    <p>Se utiliza para poner un pie de pagina en la pagina web.</p>
+    <p>Ejemplo:</p>
+    <footer><p>mi mail es: diego.araque.fernandez@gmail.com</p></footer>
+    <hr />
+
+    <h3>nav- NAVIGATIoN</h3>
+    <p>Se utiliza para colocar links de navegacion.</p>
+    <p>Ejemplo:</p>
+    <nav>
+      <a href="https://www.youtube.com/">Ir a youtube </a>|
+      <a href="https://www.google.com"> Ir a google</a>
+    </nav>
+    <hr />
+
+    <h3>img- IMAGES</h3>
+    <p>
+      Este tag nos permite agregar imagenes a nuestra pagina web, este puede
+      tener una una direccion interna o externa.
+    </p>
+    <p>Ejemplo:</p>
+    <img
+      src="../extra/tarantino.png"
+      tag="Foto del final de las peliculas de quentin tarantino"
+    />
+    <hr />
+
+    <h3>br- LINE BREAKS</h3>
+    <p>
+      Este tag nos permite corstar una linea y segui nuestro texto, oracion,
+      etc. en la siguiente linea.
+    </p>
+    <p>
+      Ejemplo: Hola me llamo <br />
+      Diego Araque <br />
+      y soy venezolano.
+    </p>
+    <hr />
+
+    <h3>hr- HORIZONTAL RULE</h3>
+    <p>
+      Este tag nos permite dibujar una linea en nuestra pagina wbe y de esa
+      manera tenerla mas ordenada. Se ha hecho usop de esto en toda la pagina.
+    </p>
+    <p>Ejemplo:</p>
+    <hr />
+
+    <h3>form- FORM</h3>
+    <p>
+      Este tag nos permite hacer una parte interactiva en nuestra pagina web y
+      hace que el usuario pueda mandar informacion.
+    </p>
+    <h4>LOGIN</h4>
+    <form>
+      <label for="user">User:</label>
+      <input type="text" id="user" name="user" />
+      <label for="password">password:</label>
+      <input type="text" id="password" name="password" />
+      <input type="submit" value="Submit" />
+    </form>
+    <hr />
+
+    <h3>table- TABLE</h3>
+    <p>
+      Este tag nos permite hacer tablas en nuestra pagina web, le podemos poner
+      la cantidad de columnas y filas que queramos.
+    </p>
+    <p>Ejemplo:</p>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Mail</th>
+      </tr>
+      <tr>
+        <th>Diego</th>
+        <th>Araque</th>
+        <th>diego.araque.fernandez@gmail.com</th>
+      </tr>
+      <tr>
+        <th>Paul</th>
+        <th>Araque</th>
+        <th>paul.araque.fernandez@gmail.com</th>
+      </tr>
+    </table>
+    <hr />
+
+    <h3>ul- UNORDERED LIST</h3>
+    <p>
+      Este tag nos permite hacer listas que no esten numeradas, en otras
+      palabras bullet points.
+    </p>
+    <p>Ejemplo:</p>
+    <h4>Lista de compras:</h4>
+    <ul>
+      <li>1kg de carne</li>
+      <li>6 huevos</li>
+      <li>500 gramos de fruta</li>
+      <li>Chocolates</li>
+    </ul>
+    <hr />
+
+    <h3>ol- ORDERED LIST</h3>
+    <p>
+      Este tag sirve para crear listas que si van a estar numeradas, como por
+      ejemplo al hacer una receta usar una lista ordenada es lo mas optimo.
+    </p>
+    <p>Ejemplo:</p>
+    <h4>Como hacer un huevo estrellado</h4>
+    <ol>
+      <li>Poner aceite en una sarten.</li>
+      <li>Calentar la estufa.</li>
+      <li>
+        Poner la sarten con el aceite esparcido en algunespacio libre de la
+        estufa.
+      </li>
+      <li>Romper el huevo y colocarlo en la sarten.</li>
+      <li>Ponerle sal al gusto a la yema.</li>
+      <li>
+        Esperar a que se vea como en la imagen de abajo y ponerlo en un plato
+        para que ya se consumido.
+      </li>
+    </ol>
+    <img
+      src="../extra/huevo.jpeg"
+      tag="Foto de un huevo estrellado"
+      class="small"
+    />
+    <hr />
+  </body>
 </html>
