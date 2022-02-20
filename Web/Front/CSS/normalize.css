@@ -3,6 +3,10 @@
 /* Document
    ========================================================================== */
 
+* {
+  box-sizing: border-box;
+}
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -147,6 +151,7 @@ sup {
 
 img {
   border-style: none;
+  max-width: 100%;
 }
 
 /* Forms
@@ -174,7 +179,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -184,7 +190,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
