@@ -1,0 +1,54 @@
+/* Selectores: Descriptores*/
+* {
+  border: 1px solid black;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: beige;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h1,
+h3 {
+  color: rgb(84, 216, 209);
+  text-align: center;
+}
+
+p {
+  color: rgb(80, 127, 255);
+  margin: 20px 40px;
+}
+
+img {
+  width: 20%;
+}
+
+em {
+  background-color: aqua;
+}
+
+div {
+  border-radius: 10px;
+  margin: 5%;
+  padding: 10px;
+}
+
+button {
+  color: aqua;
+  background-color: rgb(233, 122, 19);
+  border-radius: 20px;
+}
+
+#inicio_pagina {
+  background-color: violet;
+}
+
+.contenido {
+  background-color: orange;
+}
+
+ol {
+  list-style: lower-latin;
+}
