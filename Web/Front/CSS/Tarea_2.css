@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(40, 141, 107);
+  padding: 1%;
+}
+
+.home .titulo {
+  margin-left: 150px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.home .menu {
+  margin-right: 200px;
+}
+#menu_info li {
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+}
+.info {
+  text-align: center;
+  background-color: beige;
+  padding: 6%;
+}
+
+.info h1 {
+  padding-bottom: 5%;
+}
+
+.suscribirse {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(40, 141, 107);
+  padding: 2%;
+  justify-content: center;
+}
+
+.subjects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+
+.suscribirse_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.suscribirse_info h3 {
+  margin-right: 30px;
+}
+
+.subjects .image {
+  margin: 0;
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  background-color: rgb(40, 141, 107);
+}
