@@ -35,7 +35,8 @@ public class RBMotion : MonoBehaviour
         if (Input.GetButtonDown("Jump")) {
             // By applying a force, the player can use physics to alter
             //  the velocity
-            rb2D.AddForce(force);
+            rb2D.velocity = Vector2.up * force;
+            //rb2D.AddForce(force);
         }
     }
 }

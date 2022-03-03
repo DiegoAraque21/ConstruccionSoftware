@@ -122,8 +122,11 @@ class Vector{
         const unitarioZ = (this.z/Math.sqrt(this.magnitud));
         return `(${unitarioX} X, ${unitarioY} Y, ${unitarioZ} Z)`;
     }
-    multiplicarEscalar(){
-
+    multiplicarEscalar(escalar){
+        const escalarX = this.x * escalar;
+        const escalarY = this.y * escalar;
+        const escalarZ = this.z * escalar;
+        return `(${escalarX} X, ${escalarY} Y, ${escalarZ} Z)`;
     }
 }
 const vector1 = new Vector(5,8,3);
@@ -134,7 +137,8 @@ const newVectorSubst = new Vector(0,0,0); // Create a new vector with null value
 console.log(newVectorSubst.resta(vector1,vector2)); // resta
 console.log(`The magnitud of the vector (${vector1.x} X, ${vector1.y} Y, ${vector1.z} Z) is: ${vector1.magnitud()}`); //Magnitud
 console.log(`The unity vector of the vector (${vector1.x} X, ${vector1.y} Y, ${vector1.z} Z) is: ${vector1.vectorUnitario()}`);
-
+let escalar = 4;
+console.log(`The result we get from multiplicating the vector (${vector1.x} X, ${vector1.y} Y, ${vector1.z} Z) times this escalar ${escalar} is: ${vector1.multiplicarEscalar(escalar)}`);
 // Sixth Problem: Escribe una función que calcule el máximo común divisor de dos números.
 function mcd(num1, num2){
     let temp;
@@ -151,9 +155,17 @@ console.log(`The greatest comun divisor of ${num1} and ${num2} is: ${mcd(num1,nu
 
 // Seventh Problem: Usando ojetos de tu clase 'Vector', crea una función que reciba dos vectores, y que indique si esos vectores son ortogonales o no.
 function ortogonal(vector1,vector2){
-
+    const escalarX = vector1.x * vector2.x;
+    const escalarY = vector1.y * vector2.y;
+    const escalarZ = vector1.z * vector2.z;
+    const escalar = escalarX + escalarY + escalarZ;
+    if(escalar===0){
+        return `Vector 1 (${vector1.x} X, ${vector1.y} Y, ${vector1.z} Z) and Vector 2 (${vector2.x} X, ${vector2.y} Y, ${vector2.z} Z) are  ortogonal, because the multiplication is equal to 0`;
+    } else{
+        return `Vector 1 (${vector1.x} X, ${vector1.y} Y, ${vector1.z} Z) and Vector 2 (${vector2.x} X, ${vector2.y} Y, ${vector2.z} Z) are not ortogonal, because the multiplication of both is greater or less than 0`;
+    }
 }
-ortogonal();
+console.log(ortogonal(vector1,vector2));
 
 // Eigth Problem: Crea una función que cambie una cadena de texto a 'Hacker Speak'. Por ejemplo, para la cadena 'Javascript es divertido', su hacker speak es: 'J4v45c1pt 35 d1v3rt1d0'.
 function hackerSpeak(str){
