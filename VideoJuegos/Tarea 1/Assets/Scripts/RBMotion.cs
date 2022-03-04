@@ -27,12 +27,13 @@ public class RBMotion : MonoBehaviour
     void Update()
     {
         // Move horizontally
-        move.x = Input.GetAxis("Horizontal") * speed;
+        move.x = Input.GetAxis("Vertical") * speed;
         move.y = rb2D.velocity.y;
         // By setting the velocity, the player reacts instantly to input
         rb2D.velocity = move;
 
-        if (Input.GetButtonDown("Jump")) {
+        if (Input.GetButtonDown("Jump"))
+        {
             // By applying a force, the player can use physics to alter
             //  the velocity
             //rb2D.velocity = Vector2.up * force;
