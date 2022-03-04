@@ -1,5 +1,5 @@
 # ConstruccionSoftware
-Proyecto Construccion Software
+Clase de Construccion Software
 
 ### Video Juegos
 
