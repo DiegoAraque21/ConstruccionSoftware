@@ -9,7 +9,9 @@ function firstC(cadena){
     return "Every letter repeats itself"; // Si no hay ninguna que no se repita, se devuelve este valor
 }
 console.log(firstC("abebcedf"));
-
+console.log(firstC("Hola como estamos"));
+console.log(firstC("Diego Araque"));
+console.log(firstC("Tec de Monterrey"));
 // Second Problem: Escribe una función que implemente el algoritmo 'bubble-sort' para ordenar una lista de números.
 function bubbleSort(arreglo){
     for(let i=0;i<arreglo.length;i++){
@@ -24,6 +26,12 @@ function bubbleSort(arreglo){
     return arreglo;
 }
 let arr = [1,9,6,5,3,7];
+console.log(`The following array ${arr} sorted with bubbleSort is: ${bubbleSort(arr)}`);
+arr = [1,100,90,3,50,200];
+console.log(`The following array ${arr} sorted with bubbleSort is: ${bubbleSort(arr)}`);
+arr = [1,13,7,25,23,200];
+console.log(`The following array ${arr} sorted with bubbleSort is: ${bubbleSort(arr)}`);
+arr = [8,10,3,50,1];
 console.log(`The following array ${arr} sorted with bubbleSort is: ${bubbleSort(arr)}`);
 
 // Third Problem: Escribe una función que implemente el algoritmo 'merge-sort' para ordenar una lista de números.
@@ -65,7 +73,12 @@ function mergeSort(arreglo1, arreglo2) {
 }
 let lista = [1,9,6,5,3,7,100];
 console.log(`The array ${lista} sorted with mergeSort is: ${sort(lista)}`);
-
+lista = [1,100,90,3,50,200];
+console.log(`The following array ${lista} sorted with mergeSort is: ${sort(lista)}`);
+lista = [1,13,7,25,23,200];
+console.log(`The following array ${lista} sorted with mergeSort is: ${sort(lista)}`);
+lista = [8,10,3,50,1];
+console.log(`The following array ${lista} sorted with mergeSort is: ${sort(lista)}`);
 // Fourth Problem: Escribe dos funciones: la primera que invierta un arreglo de números y regrese un nuevo arreglo con el resultado; la segunda que modifique el mismo arreglo que se pasa como argumento. No se permite usar la función integrada 'reverse'.
 function invert(arreglo){
     let nuevoArreglo = [];
@@ -76,7 +89,12 @@ function invert(arreglo){
 }
 let invert1 = [1,2,3,4,5,6,7];
 console.log(`The following array ${invert1} inverted but returned with a new array is: ${invert(invert1)}`);
-
+invert1 = [1,8,7,2,3];
+console.log(`The following array ${invert1} inverted but returned with a new array is: ${invert(invert1)}`);
+invert1 = [7,3,5,8,9];
+console.log(`The following array ${invert1} inverted but returned with a new array is: ${invert(invert1)}`);
+invert1 = [3,9,3,5,0,1];
+console.log(`The following array ${invert1} inverted but returned with a new array is: ${invert(invert1)}`);
 function invertSame(arreglo){
     for(let i=0;i<(arreglo.length-1);i++){
         if(i === 0){
@@ -90,8 +108,13 @@ function invertSame(arreglo){
     return arreglo;
 }
 let invert2 = [1,2,3,4,5,6,7,10,9];
-console.log(`The following array ${invert2} inverted (using the smae array for the whole process): ${invertSame(invert2)}`);
-
+console.log(`The following array ${invert2} inverted (using the same array for the whole process): ${invertSame(invert2)}`);
+invert2 = [1,8,7,2,3];
+console.log(`The following array ${invert2} inverted (using the same array for the whole process): ${invertSame(invert2)}`);
+invert2 = [7,3,5,8,9];
+console.log(`The following array ${invert2} inverted (using the same array for the whole process): ${invertSame(invert2)}`);
+invert2 = [3,9,3,5,0,1];
+console.log(`The following array ${invert2} inverted (using the same array for the whole process): ${invertSame(invert2)}`);
 // Fifth Problem: Usando la definición de clase de Javascript ES6, crea una clase que se llame 'Vector' que represente un vector de 3 dimensiones. La clase debe de poder sumar y restar vectores, obtener su magnitud, obtener el vector unitario, y multiplicar por un escalar.
 class Vector{
     constructor(x, y, z) {
@@ -101,16 +124,16 @@ class Vector{
         this.magnitud;
     }
     suma(vec1, vec2){
-        this.x = vec1.x + vec2.x; 
-        this.y = vec1.y + vec2.y; 
-        this.z = vec1.z + vec2.z;
-        return `Thew sum of Vector 1 (${vec1.x} X, ${vec1.y} Y, ${vec1.z} Z) and Vector 2 (${vec2.x} X, ${vec2.y} Y, ${vec2.z} Z) is: New vector (${this.x} X, ${this.y} Y, ${this.z} Z)`;
+        const xNew = vec1.x + vec2.x; 
+        const yNew = vec1.y + vec2.y; 
+        const zNew = vec1.z + vec2.z;
+        return `Thew sum of the Vector (${vec1.x} X, ${vec1.y} Y, ${vec1.z} Z) and the Vector (${vec2.x} X, ${vec2.y} Y, ${vec2.z} Z) is: New vector (${xNew} X, ${yNew} Y, ${zNew} Z)`;
     }
     resta(vec1, vec2){
-        this.x = vec1.x - vec2.x; 
-        this.y = vec1.y - vec2.y; 
-        this.z = vec1.z - vec2.z;
-        return `Thew substraction of Vector 1 (${vec1.x} X, ${vec1.y} Y, ${vec1.z} Z) and Vector 2 (${vec2.x} X, ${vec2.y} Y, ${vec2.z} Z) is: New vector (${this.x} X, ${this.y} Y, ${this.z} Z)`;
+        const xNew = vec1.x - vec2.x; 
+        const yNew = vec1.y - vec2.y; 
+        const zNew = vec1.z - vec2.z;
+        return `Thew substraction of Vector (${vec1.x} X, ${vec1.y} Y, ${vec1.z} Z) and the Vector (${vec2.x} X, ${vec2.y} Y, ${vec2.z} Z) is: New vector (${xNew} X, ${yNew} Y, ${zNew} Z)`;
     }
     magnitud(){
         this.magnitud = Math.sqrt((this.x ** 2)+(this.y**2)+(this.z**2));
@@ -131,13 +154,33 @@ class Vector{
 }
 const vector1 = new Vector(5,8,3);
 const vector2 = new Vector(4,7,6);
+const vector3 = new Vector(-2,5,1);
+const vector4 = new Vector(-3,-4,6);
 const newVectorPlus = new Vector(0,0,0); // Create a new vector with null values so we can store the sum on it
 console.log(newVectorPlus.suma(vector1,vector2)); //suma
+console.log(newVectorPlus.suma(vector1,vector3)); //suma
+console.log(newVectorPlus.suma(vector1,vector4)); //suma
+console.log(newVectorPlus.suma(vector2,vector4)); //suma
 const newVectorSubst = new Vector(0,0,0); // Create a new vector with null values so we can store the substraction on it
 console.log(newVectorSubst.resta(vector1,vector2)); // resta
+console.log(newVectorSubst.resta(vector1,vector3)); // resta
+console.log(newVectorSubst.resta(vector1,vector4)); // resta
+console.log(newVectorSubst.resta(vector2,vector4)); // resta
 console.log(`The magnitud of the vector (${vector1.x} X, ${vector1.y} Y, ${vector1.z} Z) is: ${vector1.magnitud()}`); //Magnitud
-console.log(`The unity vector of the vector (${vector1.x} X, ${vector1.y} Y, ${vector1.z} Z) is: ${vector1.vectorUnitario()}`);
+console.log(`The magnitud of the vector (${vector2.x} X, ${vector2.y} Y, ${vector2.z} Z) is: ${vector2.magnitud()}`); //Magnitud
+console.log(`The magnitud of the vector (${vector3.x} X, ${vector3.y} Y, ${vector3.z} Z) is: ${vector3.magnitud()}`); //Magnitud
+console.log(`The magnitud of the vector (${vector4.x} X, ${vector4.y} Y, ${vector4.z} Z) is: ${vector4.magnitud()}`); //Magnitud
+console.log(`The unity vector of the vector (${vector1.x} X, ${vector1.y} Y, ${vector1.z} Z) is: ${vector1.vectorUnitario()}`); // UnityVector
+console.log(`The unity vector of the vector (${vector2.x} X, ${vector2.y} Y, ${vector2.z} Z) is: ${vector2.vectorUnitario()}`); // UnityVector
+console.log(`The unity vector of the vector (${vector3.x} X, ${vector3.y} Y, ${vector3.z} Z) is: ${vector3.vectorUnitario()}`); // UnityVector
+console.log(`The unity vector of the vector (${vector4.x} X, ${vector4.y} Y, ${vector4.z} Z) is: ${vector4.vectorUnitario()}`); // UnityVector
 let escalar = 4;
+console.log(`The result we get from multiplicating the vector (${vector1.x} X, ${vector1.y} Y, ${vector1.z} Z) times this escalar ${escalar} is: ${vector1.multiplicarEscalar(escalar)}`);
+escalar = 3;
+console.log(`The result we get from multiplicating the vector (${vector1.x} X, ${vector1.y} Y, ${vector1.z} Z) times this escalar ${escalar} is: ${vector1.multiplicarEscalar(escalar)}`);
+escalar = 12;
+console.log(`The result we get from multiplicating the vector (${vector1.x} X, ${vector1.y} Y, ${vector1.z} Z) times this escalar ${escalar} is: ${vector1.multiplicarEscalar(escalar)}`);
+escalar = 6;
 console.log(`The result we get from multiplicating the vector (${vector1.x} X, ${vector1.y} Y, ${vector1.z} Z) times this escalar ${escalar} is: ${vector1.multiplicarEscalar(escalar)}`);
 // Sixth Problem: Escribe una función que calcule el máximo común divisor de dos números.
 function mcd(num1, num2){
@@ -152,7 +195,15 @@ function mcd(num1, num2){
 let num1 = 8;
 let num2 = 9;
 console.log(`The greatest comun divisor of ${num1} and ${num2} is: ${mcd(num1,num2)}`);
-
+num1 = 2;
+num2=6;
+console.log(`The greatest comun divisor of ${num1} and ${num2} is: ${mcd(num1,num2)}`);
+num1 = 4;
+num2=8;
+console.log(`The greatest comun divisor of ${num1} and ${num2} is: ${mcd(num1,num2)}`);
+num1 = 1;
+num2=10;
+console.log(`The greatest comun divisor of ${num1} and ${num2} is: ${mcd(num1,num2)}`);
 // Seventh Problem: Usando ojetos de tu clase 'Vector', crea una función que reciba dos vectores, y que indique si esos vectores son ortogonales o no.
 function ortogonal(vector1,vector2){
     const escalarX = vector1.x * vector2.x;
@@ -166,7 +217,9 @@ function ortogonal(vector1,vector2){
     }
 }
 console.log(ortogonal(vector1,vector2));
-
+console.log(ortogonal(vector1,vector3));
+console.log(ortogonal(vector1,vector4));
+console.log(ortogonal(vector2,vector3));
 // Eigth Problem: Crea una función que cambie una cadena de texto a 'Hacker Speak'. Por ejemplo, para la cadena 'Javascript es divertido', su hacker speak es: 'J4v45c1pt 35 d1v3rt1d0'.
 function hackerSpeak(str){
     let arreglo = []; // Crear arreglo en el cual vamos a cambiar cada letra por su equivalente en numero
@@ -199,7 +252,12 @@ function hackerSpeak(str){
 }
 let str = "JavaScript es divertido";
 console.log(`The string "${str}" in "Hacker Speak" is: ${hackerSpeak(str)}`);
-
+str = "Hola soy Diego";
+console.log(`The string "${str}" in "Hacker Speak" is: ${hackerSpeak(str)}`);
+str = "Estudio en el Tec";
+console.log(`The string "${str}" in "Hacker Speak" is: ${hackerSpeak(str)}`);
+str = "Tengo 19 años";
+console.log(`The string "${str}" in "Hacker Speak" is: ${hackerSpeak(str)}`);
 // Ninth problem: Escribe una función que reciba un número, y regrese una lista con todos sus factores. Por ejemplo: factoriza(12) -> [1, 2, 3, 4, 6, 12].
 function factores(num){
     let arreglo = [];
@@ -213,7 +271,12 @@ function factores(num){
 }
 let numero = 16;
 console.log(`The factors of ${numero} are: ${factores(numero)}`);
-
+numero = 10;
+console.log(`The factors of ${numero} are: ${factores(numero)}`);
+numero = 9;
+console.log(`The factors of ${numero} are: ${factores(numero)}`);
+numero = 12;
+console.log(`The factors of ${numero} are: ${factores(numero)}`);
 // Tenth problem: Escribe una función que quite los elementos duplicados de un arreglo y regrese una lista con los elementos que quedan. Por ejemplo: quitaDuplicados([1, 0, 1, 1, 0, 0]) -> [1, 0]
 function quitaDuplicados(arreglo){
     let arregloSinDuplicados = []; // Crear un nuevo arreglo en el cual no se repitiran los valores
@@ -234,4 +297,10 @@ function quitaDuplicados(arreglo){
     return arregloSinDuplicados;
 }
 let arreglo = [1,0,1,1,0,0,2,2,4];
+console.log(`The array ${arreglo} without duplicates is: ${quitaDuplicados(arreglo)}`);
+arreglo = [1,0,1,3,3,1,6,6,8];
+console.log(`The array ${arreglo} without duplicates is: ${quitaDuplicados(arreglo)}`);
+arreglo = [1,0,1,30,3,1,6,80,80];
+console.log(`The array ${arreglo} without duplicates is: ${quitaDuplicados(arreglo)}`);
+arreglo = [20,2,20,100,100];
 console.log(`The array ${arreglo} without duplicates is: ${quitaDuplicados(arreglo)}`);
