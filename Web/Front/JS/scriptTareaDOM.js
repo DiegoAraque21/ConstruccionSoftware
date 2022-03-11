@@ -87,6 +87,12 @@ function changeContent(event) {
 function addColor(event) {
   event.preventDefault();
   let select = document.querySelector("#colorSelect");
+  let colorsArr = ["Yellow", "Magenta", "Pink", "Blue", "Grey"];
+  const color = Math.floor(Math.random() * colorsArr.length);
+  let option = document.createElement("option");
+  let colorName = document.createTextNode(colorsArr[color]);
+  option.appendChild(colorName);
+  select.appendChild(option);
 }
 
 // EXERCISE 6
