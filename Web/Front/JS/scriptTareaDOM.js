@@ -95,6 +95,18 @@ function addColor(event) {
   select.appendChild(option);
 }
 
+function removeColor(event) {
+  event.preventDefault();
+  let select = document.querySelector("#colorSelect");
+  let randomColor = Math.trunc(Math.random() * select.length);
+  console.log(randomColor);
+  for (let i = 0; i < select.length; i++) {
+    if (select.options[i].value === select.options[randomColor].value) {
+      select.remove(i);
+    }
+  }
+}
+
 // EXERCISE 6
 
 function mouseImage() {
