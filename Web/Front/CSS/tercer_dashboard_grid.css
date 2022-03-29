@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+  background-color: black;
+}
+
+.grid-container {
+  display: grid;
+  height: 100fr;
+  grid-template-columns: repeat(3, 33fr);
+  grid-template-rows: repeat(3, 29vh);
+  gap: 20px;
+  justify-items: stretch;
+}
+.grid-item-1 {
+  grid-column: 1 / -1;
+  background-color: red;
+}
+.grid-item-2 {
+  background-color: violet;
+}
+.grid-item-3 {
+  grid-column: 2 / 4;
+  background-color: blue;
+}
+.grid-item-4 {
+  grid-column: 1 / -1;
+  background-color: coral;
+}
